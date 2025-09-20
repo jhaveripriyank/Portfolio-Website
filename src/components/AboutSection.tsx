@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+  return <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-portfolio-muted text-lg mb-4">Get To Know More</p>
@@ -17,7 +15,7 @@ const AboutSection = () => {
               <CardContent className="p-6 text-center">
                 <GraduationCap className="w-12 h-12 mx-auto mb-4 text-portfolio-accent" />
                 <h3 className="text-xl font-semibold text-portfolio-text mb-2">Masters</h3>
-                <p className="text-portfolio-muted mb-1">Your University</p>
+                <p className="text-portfolio-muted mb-1">Drexel University</p>
                 <p className="text-portfolio-muted">Computer Science</p>
               </CardContent>
             </Card>
@@ -26,7 +24,7 @@ const AboutSection = () => {
               <CardContent className="p-6 text-center">
                 <GraduationCap className="w-12 h-12 mx-auto mb-4 text-portfolio-accent" />
                 <h3 className="text-xl font-semibold text-portfolio-text mb-2">Bachelors</h3>
-                <p className="text-portfolio-muted mb-1">Your University</p>
+                <p className="text-portfolio-muted mb-1">Mumbai University</p>
                 <p className="text-portfolio-muted">Computer Engineering</p>
               </CardContent>
             </Card>
@@ -56,8 +54,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;

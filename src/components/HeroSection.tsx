@@ -1,28 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Download, Mail } from "lucide-react";
 import profilePic from "@/assets/profile-pic.jpg";
-
 const HeroSection = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+  return <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         {/* Profile Image */}
         <div className="flex justify-center lg:order-2">
           <div className="relative">
-            <img
-              src={profilePic}
-              alt="Profile"
-              className="w-80 h-80 rounded-full object-cover shadow-2xl"
-            />
+            <img src={profilePic} alt="Profile" className="w-80 h-80 rounded-full object-cover shadow-2xl" />
           </div>
         </div>
 
         {/* Content */}
         <div className="text-center lg:text-left lg:order-1">
           <p className="text-portfolio-muted text-lg mb-4">Hey, I'm</p>
-          <h1 className="text-5xl lg:text-6xl font-bold text-portfolio-text mb-4">
-            Your Name
-          </h1>
+          <h1 className="text-5xl lg:text-6xl font-bold text-portfolio-text mb-4">Priyank Jhaveri</h1>
           <p className="text-xl text-portfolio-muted mb-8">
             Software Developer
           </p>
@@ -48,8 +40,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
