@@ -17,7 +17,7 @@ const AboutSection = () => {
                 <h3 className="text-xl font-semibold text-portfolio-text mb-2">Master's</h3>
                 <p className="text-portfolio-muted mb-1">Drexel University, Philadelphia</p>
                 <p className="text-portfolio-muted mb-1">Computer Science</p>
-                <p className="text-sm text-portfolio-muted">GPA: 3.75/4.0</p>
+                <p className="text-sm text-portfolio-muted">GPA: 3.78/4.0</p>
                 <p className="text-sm text-portfolio-muted">Sep 2024 — May 2026</p>
               </CardContent>
             </Card>
@@ -45,9 +45,7 @@ const AboutSection = () => {
               </p>
               
               <p className="text-portfolio-muted leading-relaxed">
-                Currently working as a Graduate Research Assistant developing novel generative AI frameworks 
-                for healthcare applications. My experience spans from predictive maintenance systems using 
-                computer vision to full-stack digital solutions for workforce management and educational technology.
+                As an AI/ML Engineer, I enjoy turning complex ideas into practical solutions, whether it’s building smarter medical imaging tools with generative AI, designing full-stack apps for startups, or working on research in computer vision. My journey has taken me across research labs, international internships, and industry projects — and I’m always excited to collaborate on innovative work that blends AI research with real-world impact.
               </p>
 
               <p className="text-portfolio-muted leading-relaxed">

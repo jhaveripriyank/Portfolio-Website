@@ -1,8 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -13,69 +9,43 @@ const ContactSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-portfolio-text">Contact Me</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold text-portfolio-text mb-6">
-                Let's work together
-              </h3>
-              <p className="text-portfolio-muted leading-relaxed mb-8">
-                I'm always interested in new opportunities in AI/ML, software development, and research. 
-                Whether you have a question or want to discuss potential collaborations, feel free to reach out!
-              </p>
+        {/* Centered Content */}
+        <div className="flex flex-col items-center text-center space-y-8">
+          <div>
+            <h3 className="text-2xl font-semibold text-portfolio-text mb-6">
+              Let's work together
+            </h3>
+            <p className="text-portfolio-muted leading-relaxed mb-8 max-w-2xl">
+              I'm always interested in new opportunities in AI/ML, software development, and research. 
+              Whether you have a question or want to discuss potential collaborations, feel free to reach out!
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="flex items-center justify-center gap-4">
+              <Mail className="w-5 h-5 text-portfolio-accent" />
+              <div>
+                <p className="font-medium text-portfolio-text">Email</p>
+                <p className="text-portfolio-muted">pj365@drexel.edu</p>
+              </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <Mail className="w-5 h-5 text-portfolio-accent" />
-                <div>
-                  <p className="font-medium text-portfolio-text">Email</p>
-                  <p className="text-portfolio-muted">pj365@drexel.edu</p>
-                </div>
+            <div className="flex items-center justify-center gap-4">
+              <Phone className="w-5 h-5 text-portfolio-accent" />
+              <div>
+                <p className="font-medium text-portfolio-text">Phone</p>
+                <p className="text-portfolio-muted">+1 (551) 396-9263</p>
               </div>
-              
-              <div className="flex items-center gap-4">
-                <Phone className="w-5 h-5 text-portfolio-accent" />
-                <div>
-                  <p className="font-medium text-portfolio-text">Phone</p>
-                  <p className="text-portfolio-muted">+1 (551) 396-9263</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <MapPin className="w-5 h-5 text-portfolio-accent" />
-                <div>
-                  <p className="font-medium text-portfolio-text">Location</p>
-                  <p className="text-portfolio-muted">Philadelphia, Pennsylvania, United States</p>
-                </div>
+            </div>
+
+            <div className="flex items-center justify-center gap-4">
+              <MapPin className="w-5 h-5 text-portfolio-accent" />
+              <div>
+                <p className="font-medium text-portfolio-text">Location</p>
+                <p className="text-portfolio-muted">Philadelphia, Pennsylvania, United States</p>
               </div>
             </div>
           </div>
-
-          {/* Contact Form */}
-          <Card className="border-portfolio-accent/20">
-            <CardHeader>
-              <CardTitle className="text-xl text-portfolio-text">Send a Message</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Input placeholder="First Name" className="border-portfolio-accent/20 focus:border-portfolio-accent" />
-                <Input placeholder="Last Name" className="border-portfolio-accent/20 focus:border-portfolio-accent" />
-              </div>
-              <Input placeholder="Email" type="email" className="border-portfolio-accent/20 focus:border-portfolio-accent" />
-              <Input placeholder="Subject" className="border-portfolio-accent/20 focus:border-portfolio-accent" />
-              <Textarea 
-                placeholder="Your message..." 
-                rows={6} 
-                className="border-portfolio-accent/20 focus:border-portfolio-accent resize-none"
-              />
-              <Button className="w-full bg-portfolio-accent hover:bg-portfolio-accent/90">
-                <Send className="w-4 h-4 mr-2" />
-                Send Message
-              </Button>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

@@ -17,8 +17,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 9%;
 
-    --primary: 59 130% 46%;
-    --primary-foreground: 0 0% 98%;
+  --primary: 220 60% 50%; /* blue */
+  --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 9%;
@@ -26,22 +26,22 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 59 130% 46%;
-    --accent-foreground: 0 0% 98%;
+  --accent: 220 60% 50%; /* blue */
+  --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 59 130% 46%;
+  --ring: 220 60% 50%;
 
     --radius: 0.5rem;
     
     /* Portfolio-specific colors */
     --portfolio-bg: 0 0% 100%;
     --portfolio-text: 0 0% 9%;
-    --portfolio-accent: 59 130% 46%;
+  --portfolio-accent: 220 60% 50%;
     --portfolio-muted: 0 0% 45%;
 
     --sidebar-background: 0 0% 98%;

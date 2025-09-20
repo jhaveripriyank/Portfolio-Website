@@ -2,26 +2,37 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle } from "lucide-react";
 
-const ExperienceSection = () => {
-  const programmingSkills = [
-    { name: "Python", level: "Experienced" },
-    { name: "JavaScript", level: "Experienced" },
-    { name: "Java", level: "Experienced" },
-    { name: "C", level: "Intermediate" },
-    { name: "MATLAB", level: "Intermediate" },
-    { name: "Dart", level: "Intermediate" },
-  ];
+type SkillLevels = {
+  Experienced: string[];
+  Intermediate: string[];
+};
 
-  const frameworksSkills = [
-    { name: "PyTorch", level: "Experienced" },
-    { name: "TensorFlow", level: "Experienced" },
-    { name: "ReactJS", level: "Experienced" },
-    { name: "Django", level: "Experienced" },
-    { name: "NodeJS", level: "Intermediate" },
-    { name: "AngularJS", level: "Intermediate" },
-    { name: "Flask", level: "Intermediate" },
-    { name: "OpenCV", level: "Intermediate" },
-  ];
+const ExperienceSection = () => {
+  const programmingSkills: SkillLevels = {
+    Experienced: ["Python", "JavaScript", "Java"],
+    Intermediate: ["C", "MATLAB", "Dart"],
+  };
+
+  const frameworksSkills: SkillLevels = {
+    Experienced: ["PyTorch", "TensorFlow", "ReactJS", "Django"],
+    Intermediate: ["NodeJS", "AngularJS", "Flask", "OpenCV"],
+  };
+
+  const renderSkills = (skills: SkillLevels) =>
+    (Object.entries(skills) as [keyof SkillLevels, string[]][])
+      .flatMap(([level, names]) =>
+        names.map((name, index) => (
+          <div key={`${name}-${index}`} className="flex items-center gap-2">
+            <CheckCircle className="w-5 h-5 text-portfolio-accent flex-shrink-0" />
+            <div>
+              <h3 className="font-semibold text-portfolio-text">{name}</h3>
+              <Badge variant="secondary" className="text-xs">
+                {level}
+              </Badge>
+            </div>
+          </div>
+        ))
+      );
 
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
@@ -32,47 +43,27 @@ const ExperienceSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Frontend Development */}
+          {/* Programming Languages */}
           <Card className="border-portfolio-accent/20 hover:border-portfolio-accent/40 transition-colors">
             <CardHeader>
               <CardTitle className="text-2xl text-center text-portfolio-text">
                 Programming Languages
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              {programmingSkills.map((skill, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-portfolio-accent flex-shrink-0" />
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-portfolio-text">{skill.name}</h3>
-                    <Badge variant="secondary" className="text-xs">
-                      {skill.level}
-                    </Badge>
-                  </div>
-                </div>
-              ))}
+            <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {renderSkills(programmingSkills)}
             </CardContent>
           </Card>
 
-          {/* Backend Development */}
+          {/* Frameworks & Tools */}
           <Card className="border-portfolio-accent/20 hover:border-portfolio-accent/40 transition-colors">
             <CardHeader>
               <CardTitle className="text-2xl text-center text-portfolio-text">
                 Frameworks & Tools
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              {frameworksSkills.map((skill, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-portfolio-accent flex-shrink-0" />
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-portfolio-text">{skill.name}</h3>
-                    <Badge variant="secondary" className="text-xs">
-                      {skill.level}
-                    </Badge>
-                  </div>
-                </div>
-              ))}
+            <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {renderSkills(frameworksSkills)}
             </CardContent>
           </Card>
         </div>
