@@ -21,8 +21,8 @@ const ContactSection = () => {
                 Let's work together
               </h3>
               <p className="text-portfolio-muted leading-relaxed mb-8">
-                I'm always interested in new opportunities and exciting projects. 
-                Whether you have a question or just want to say hi, feel free to reach out!
+                I'm always interested in new opportunities in AI/ML, software development, and research. 
+                Whether you have a question or want to discuss potential collaborations, feel free to reach out!
               </p>
             </div>
 
@@ -31,7 +31,7 @@ const ContactSection = () => {
                 <Mail className="w-5 h-5 text-portfolio-accent" />
                 <div>
                   <p className="font-medium text-portfolio-text">Email</p>
-                  <p className="text-portfolio-muted">your.email@example.com</p>
+                  <p className="text-portfolio-muted">pj365@drexel.edu</p>
                 </div>
               </div>
               
@@ -39,7 +39,7 @@ const ContactSection = () => {
                 <Phone className="w-5 h-5 text-portfolio-accent" />
                 <div>
                   <p className="font-medium text-portfolio-text">Phone</p>
-                  <p className="text-portfolio-muted">+1 (555) 123-4567</p>
+                  <p className="text-portfolio-muted">+1 (551) 396-9263</p>
                 </div>
               </div>
               
@@ -47,7 +47,7 @@ const ContactSection = () => {
                 <MapPin className="w-5 h-5 text-portfolio-accent" />
                 <div>
                   <p className="font-medium text-portfolio-text">Location</p>
-                  <p className="text-portfolio-muted">Your City, Country</p>
+                  <p className="text-portfolio-muted">Philadelphia, Pennsylvania, United States</p>
                 </div>
               </div>
             </div>

@@ -5,23 +5,26 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, shopping cart, payment integration, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Dental Disease Detector",
+      description: "Addressed data scarcity in medical imaging using generative AI to build robust datasets of synthetic dental radiographs. Achieved superior accuracy with fine-tuned models like Xception and DenseNet.",
+      technologies: ["Python", "TensorFlow", "Computer Vision", "Medical AI"],
+      date: "Feb 2024",
       githubLink: "#",
       liveLink: "#",
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+      title: "Personal Expense Tracker",
+      description: "Developed comprehensive test suite to verify financial logic and alerts. Documented test results and failure cases for iterative improvements.",
+      technologies: ["JavaScript", "Testing", "Financial Logic"],
+      date: "Philadelphia",
       githubLink: "#",
       liveLink: "#",
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that provides current weather conditions, forecasts, and weather maps using external APIs.",
-      technologies: ["JavaScript", "HTML", "CSS", "Weather API"],
+      title: "Road Maintenance System using YOLOV7",
+      description: "Research publication on AI-powered road maintenance system using advanced computer vision techniques for automated road condition assessment. Published in 2023 ICPCSN Conference.",
+      technologies: ["YOLOV7", "Computer Vision", "Research", "Published"],
+      date: "Oct 2023",
       githubLink: "#",
       liveLink: "#",
     },
@@ -44,6 +47,7 @@ const ProjectsSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                <p className="text-portfolio-muted text-xs mb-2 font-medium">{project.date}</p>
                 <p className="text-portfolio-muted text-sm leading-relaxed">
                   {project.description}
                 </p>

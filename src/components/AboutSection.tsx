@@ -14,18 +14,22 @@ const AboutSection = () => {
             <Card className="border-portfolio-accent/20 hover:border-portfolio-accent/40 transition-colors">
               <CardContent className="p-6 text-center">
                 <GraduationCap className="w-12 h-12 mx-auto mb-4 text-portfolio-accent" />
-                <h3 className="text-xl font-semibold text-portfolio-text mb-2">Masters</h3>
-                <p className="text-portfolio-muted mb-1">Drexel University</p>
-                <p className="text-portfolio-muted">Computer Science</p>
+                <h3 className="text-xl font-semibold text-portfolio-text mb-2">Master's</h3>
+                <p className="text-portfolio-muted mb-1">Drexel University, Philadelphia</p>
+                <p className="text-portfolio-muted mb-1">Computer Science</p>
+                <p className="text-sm text-portfolio-muted">GPA: 3.75/4.0</p>
+                <p className="text-sm text-portfolio-muted">Sep 2024 — May 2026</p>
               </CardContent>
             </Card>
 
             <Card className="border-portfolio-accent/20 hover:border-portfolio-accent/40 transition-colors">
               <CardContent className="p-6 text-center">
                 <GraduationCap className="w-12 h-12 mx-auto mb-4 text-portfolio-accent" />
-                <h3 className="text-xl font-semibold text-portfolio-text mb-2">Bachelors</h3>
-                <p className="text-portfolio-muted mb-1">Mumbai University</p>
-                <p className="text-portfolio-muted">Computer Engineering</p>
+                <h3 className="text-xl font-semibold text-portfolio-text mb-2">Bachelor's</h3>
+                <p className="text-portfolio-muted mb-1">Shah & Anchor Kutchhi Engineering College</p>
+                <p className="text-portfolio-muted mb-1">Computer Science</p>
+                <p className="text-sm text-portfolio-muted">GPA: 3.62/4.0</p>
+                <p className="text-sm text-portfolio-muted">Sep 2020 — Jun 2024</p>
               </CardContent>
             </Card>
           </div>
@@ -34,21 +38,22 @@ const AboutSection = () => {
           <div className="lg:col-span-2">
             <div className="space-y-6">
               <p className="text-portfolio-text text-lg leading-relaxed">
-                I am a passionate and driven Computer Science graduate student with expertise in 
-                <span className="text-portfolio-accent font-semibold"> Web Development</span>, 
-                <span className="text-portfolio-accent font-semibold"> Mobile Development</span>, and 
-                <span className="text-portfolio-accent font-semibold"> Artificial Intelligence</span>.
+                I am a passionate Computer Science graduate student at Drexel University with expertise in 
+                <span className="text-portfolio-accent font-semibold"> Artificial Intelligence</span>, 
+                <span className="text-portfolio-accent font-semibold"> Web Development</span>, and 
+                <span className="text-portfolio-accent font-semibold"> Machine Learning</span>.
               </p>
               
               <p className="text-portfolio-muted leading-relaxed">
-                My academic journey, paired with hands-on experience, has shaped my technical skills 
-                and problem-solving abilities. I'm dedicated to creating innovative solutions and 
-                staying at the forefront of technology trends.
+                Currently working as a Graduate Research Assistant developing novel generative AI frameworks 
+                for healthcare applications. My experience spans from predictive maintenance systems using 
+                computer vision to full-stack digital solutions for workforce management and educational technology.
               </p>
 
               <p className="text-portfolio-muted leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge with the developer community.
+                <strong>Relevant Coursework:</strong> Computer Networks, Artificial Intelligence, Operating Systems, 
+                Object Oriented Programming, Human AI, Computer Vision, Responsible Machine Learning, Privacy, 
+                Development of User Interfaces, Cloud Computing, Database Systems, Cryptography and System Security.
               </p>
             </div>
           </div>

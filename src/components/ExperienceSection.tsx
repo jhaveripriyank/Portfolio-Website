@@ -3,22 +3,24 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle } from "lucide-react";
 
 const ExperienceSection = () => {
-  const frontendSkills = [
-    { name: "HTML", level: "Experienced" },
-    { name: "CSS", level: "Experienced" },
+  const programmingSkills = [
+    { name: "Python", level: "Experienced" },
     { name: "JavaScript", level: "Experienced" },
-    { name: "React.js", level: "Experienced" },
-    { name: "TypeScript", level: "Intermediate" },
-    { name: "Tailwind CSS", level: "Experienced" },
+    { name: "Java", level: "Experienced" },
+    { name: "C", level: "Intermediate" },
+    { name: "MATLAB", level: "Intermediate" },
+    { name: "Dart", level: "Intermediate" },
   ];
 
-  const backendSkills = [
-    { name: "Node.js", level: "Experienced" },
-    { name: "Python", level: "Experienced" },
-    { name: "Express.js", level: "Intermediate" },
-    { name: "MongoDB", level: "Intermediate" },
-    { name: "PostgreSQL", level: "Intermediate" },
-    { name: "Git", level: "Experienced" },
+  const frameworksSkills = [
+    { name: "PyTorch", level: "Experienced" },
+    { name: "TensorFlow", level: "Experienced" },
+    { name: "ReactJS", level: "Experienced" },
+    { name: "Django", level: "Experienced" },
+    { name: "NodeJS", level: "Intermediate" },
+    { name: "AngularJS", level: "Intermediate" },
+    { name: "Flask", level: "Intermediate" },
+    { name: "OpenCV", level: "Intermediate" },
   ];
 
   return (
@@ -34,11 +36,11 @@ const ExperienceSection = () => {
           <Card className="border-portfolio-accent/20 hover:border-portfolio-accent/40 transition-colors">
             <CardHeader>
               <CardTitle className="text-2xl text-center text-portfolio-text">
-                Frontend Development
+                Programming Languages
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              {frontendSkills.map((skill, index) => (
+              {programmingSkills.map((skill, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-portfolio-accent flex-shrink-0" />
                   <div className="flex-1">
@@ -56,11 +58,11 @@ const ExperienceSection = () => {
           <Card className="border-portfolio-accent/20 hover:border-portfolio-accent/40 transition-colors">
             <CardHeader>
               <CardTitle className="text-2xl text-center text-portfolio-text">
-                Backend Development
+                Frameworks & Tools
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              {backendSkills.map((skill, index) => (
+              {frameworksSkills.map((skill, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-portfolio-accent flex-shrink-0" />
                   <div className="flex-1">

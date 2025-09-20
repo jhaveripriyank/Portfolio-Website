@@ -16,11 +16,14 @@ const HeroSection = () => {
           <p className="text-portfolio-muted text-lg mb-4">Hey, I'm</p>
           <h1 className="text-5xl lg:text-6xl font-bold text-portfolio-text mb-4">Priyank Jhaveri</h1>
           <p className="text-xl text-portfolio-muted mb-8">
-            Software Developer
+            Graduate Student in Computer Science | Software Developer
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-            <Button className="bg-portfolio-accent hover:bg-portfolio-accent/90">
+            <Button 
+              className="bg-portfolio-accent hover:bg-portfolio-accent/90"
+              onClick={() => window.open('/Resume_Priyank_Jhaveri.pdf', '_blank')}
+            >
               <Download className="w-4 h-4 mr-2" />
               Download CV
             </Button>
