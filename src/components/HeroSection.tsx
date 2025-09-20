@@ -32,7 +32,7 @@ const HeroSection = () => {
               onClick={() => window.open("/Resume_Priyank_Jhaveri.pdf", "_blank")}
             >
               <Download className="w-4 h-4 mr-2" />
-              Download CV
+              View CV
             </Button>
           </div>
 
