@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        portfolio: {
+          bg: "hsl(var(--portfolio-bg))",
+          text: "hsl(var(--portfolio-text))",
+          accent: "hsl(var(--portfolio-accent))",
+          muted: "hsl(var(--portfolio-muted))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
